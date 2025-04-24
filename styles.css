@@ -497,19 +497,19 @@ body {
   }
 
   .mobile-block[data-id="commercial"] {
-    background-image: url("images/fondo.webp");
+    background-image: url("images/fondo7.webp");
   }
 
   .mobile-block[data-id="multifamily"] {
-    background-image: url("images/fondo.webp");
+    background-image: url("images/fondo6.webp");
   }
 
   .mobile-block[data-id="ecology"] {
-    background-image: url("images/fondo.webp");
+    background-image: url("images/fondo5.webp");
   }
 
   .mobile-block[data-id="residential"] {
-    background-image: url("images/fondo-.webp");
+    background-image: url("images/fondo-4.webp");
   }
 }
 
