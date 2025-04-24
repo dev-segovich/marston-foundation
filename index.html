@@ -3,24 +3,191 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>GME Alliance | Coming Soon</title>
+  <title>GME Alliance</title>
   <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+
 </head>
 <body>
-  <div class="overlay"></div>
-  <div class="container drop-in">
-    <div class="content">
-      <img src="images/Logo GME alliance.png" alt="GME Alliance Logo" class="logo" />
-      <p class="subtitle">Strategic Investments in Emerging Sectors</p>
-      <h2 class="coming-soon">Coming Soon</h2>
-      <p class="description">
-        We're working hard to launch our new site. Stay tuned for something amazing.
-      </p>
-      <form class="email-form">
-        <input type="email" placeholder="Enter your email" required />
-        <button type="submit">Notify Me</button>
-      </form>
-    </div>
-  </div>
+    <header class="navbar">
+        <img src="images/Logo GME alliance.png" alt="GME Alliance Logo" class="logo" />
+        
+        <nav class="nav-links">
+            <a href="index.html" class="nav-link active">Our Work</a>
+            <a href="aboutus.html" class="nav-link">About Us</a>
+            <a href="content.html" class="nav-link">Content</a>
+        </nav>
+        
+        <!-- Botón hamburguesa -->
+        <button class="menu-toggle" aria-label="Toggle menu">
+            ☰
+        </button>
+        
+        <!-- Menú móvil fullscreen -->
+        <div class="mobile-menu">
+            <button class="close-menu" aria-label="Close menu">✕</button>
+          
+            <a href="index.html" class="nav-link">Our Work</a>
+            <a href="aboutus.html" class="nav-link">About Us</a>
+            <a href="content.html" class="nav-link">Content</a>
+        </div>
+          
+    </header>
+      
+    <main>
+        <section class="work-columns">
+            <div class="column" data-bg="images/fondo-4.webp">
+              <h2>Commercial</h2>
+              <ul class="submenu">
+                <li><a href="#">Retail</a></li>
+                <li><a href="#">Offices</a></li>
+                <li><a href="#">Mixed Use</a></li>
+              </ul>
+            </div>
+            <div class="column" data-bg="images/fondo5.webp">
+              <h2>MultiFamily</h2>
+              <ul class="submenu">
+                <li><a href="#">Apartments</a></li>
+                <li><a href="#">Condos</a></li>
+                <li><a href="#">Student Housing</a></li>
+              </ul>
+            </div>
+            <div class="column" data-bg="images/fondo6.webp">
+              <h2>Ecology</h2>
+              <ul class="submenu">
+                <li><a href="#">Clean Energy</a></li>
+                <li><a href="#">Green Infrastructure</a></li>
+                <li><a href="#">Sustainability</a></li>
+              </ul>
+            </div>
+            <div class="column" data-bg="images/fondo7.webp">
+              <h2>Residential</h2>
+              <ul class="submenu">
+                <li><a href="#">Single Family</a></li>
+                <li><a href="#">Luxury Homes</a></li>
+                <li><a href="#">Community Housing</a></li>
+              </ul>
+            </div>
+        </section>
+        <section class="work-columns-mobile">
+            <div class="mobile-block" data-id="commercial">
+              <h2>Commercial</h2>
+              <ul class="submenu-mobile">
+                <li><a href="#">Retail</a></li>
+                <li><a href="#">Offices</a></li>
+                <li><a href="#">Mixed Use</a></li>
+              </ul>
+            </div>
+            <div class="mobile-block" data-id="multifamily">
+              <h2>MultiFamily</h2>
+              <ul class="submenu-mobile">
+                <li><a href="#">Apartments</a></li>
+                <li><a href="#">Condos</a></li>
+                <li><a href="#">Student Housing</a></li>
+              </ul>
+            </div>
+            <div class="mobile-block" data-id="ecology">
+              <h2>Ecology</h2>
+              <ul class="submenu-mobile">
+                <li><a href="#">Clean Energy</a></li>
+                <li><a href="#">Green Infrastructure</a></li>
+                <li><a href="#">Sustainability</a></li>
+              </ul>
+            </div>
+            <div class="mobile-block" data-id="residential">
+              <h2>Residential</h2>
+              <ul class="submenu-mobile">
+                <li><a href="#">Single Family</a></li>
+                <li><a href="#">Luxury Homes</a></li>
+                <li><a href="#">Community Housing</a></li>
+              </ul>
+            </div>
+          </section>
+          
+        <section class="stay-up">
+            <div class="stay-up-content">
+              <h2>Stay Up To Date</h2>
+              <p>Subscribe to receive the latest updates, insights, and stories from GME Alliance.</p>
+              <form class="stay-up-form">
+                <input type="email" placeholder="Your email address" required />
+                <button type="submit">Subscribe</button>
+              </form>
+            </div>
+          </section>
+          <footer class="footer">
+            <div class="footer-links">
+              <a href="#">Terms & Conditions</a>
+              <a href="#">Privacy Policy</a>
+              <a href="#">Contact</a>
+            </div>
+          
+            <div class="footer-socials">
+                <a href="#" aria-label="Instagram">
+                  <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#" aria-label="Facebook">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#" aria-label="LinkedIn">
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+              </div>              
+          
+            <div class="footer-copy">
+              &copy; 2025 GME Alliance. All rights reserved.
+            </div>
+          </footer>          
+      </main>      
 </body>
+
+<script>
+    const toggleBtn = document.querySelector(".menu-toggle");
+    const closeBtn = document.querySelector(".close-menu");
+    const mobileMenu = document.querySelector(".mobile-menu");
+  
+    toggleBtn.addEventListener("click", () => {
+      mobileMenu.classList.toggle("open");
+    });
+  
+    closeBtn.addEventListener("click", () => {
+      mobileMenu.classList.remove("open");
+    });
+</script>
+
+<script>
+    const workSection = document.querySelector(".work-columns");
+    const columns = document.querySelectorAll(".column");
+  
+    // Establecer fondo inicial con la primera columna
+    const initialBg = columns[0].getAttribute("data-bg");
+    workSection.style.backgroundImage = `url(${initialBg})`;
+  
+    // Cambiar al pasar el mouse
+    columns.forEach(col => {
+      col.addEventListener("mouseenter", () => {
+        const bg = col.getAttribute("data-bg");
+        workSection.style.backgroundImage = `url(${bg})`;
+      });
+    });
+</script>
+<script>
+  const mobileBlocks = document.querySelectorAll(".mobile-block");
+
+  mobileBlocks.forEach(block => {
+    block.addEventListener("click", () => {
+      // Cierra otros
+      mobileBlocks.forEach(b => {
+        if (b !== block) b.classList.remove("active");
+      });
+
+      // Toggle el que clickeaste
+      block.classList.toggle("active");
+    });
+  });
+</script>
+
+  
+  
+  
+  
 </html>

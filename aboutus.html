@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GME Alliance</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  </head>
+  <body>
+    <header class="navbar">
+      <img
+        src="images/Logo GME alliance.png"
+        alt="GME Alliance Logo"
+        class="logo"
+      />
+
+      <nav class="nav-links">
+        <a href="index.html" class="nav-link">Our Work</a>
+        <a href="aboutus.html" class="nav-link active">About Us</a>
+        <a href="content.html" class="nav-link">Content</a>
+      </nav>
+
+      <!-- Botón hamburguesa -->
+      <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+
+      <!-- Menú móvil fullscreen -->
+      <div class="mobile-menu">
+        <button class="close-menu" aria-label="Close menu">✕</button>
+
+        <a href="index.html" class="nav-link">Our Work</a>
+        <a href="aboutus.html" class="nav-link active">About Us</a>
+        <a href="content.html" class="nav-link">Content</a>
+      </div>
+    </header>
+
+    <main class="about-us-main">
+      <section class="about-hero">
+        <h1 class="about-title animate-on-scroll fade-left">Placeholder</h1>
+      </section>
+      <div class="about-container">
+        <section class="about-image-section animate-on-scroll fade-right">
+          <img
+            src="images/background.png"
+            alt="GME Alliance Team or Vision"
+            class="about-image"
+          />
+        </section>
+
+        <section class="about-description animate-on-scroll fade-up">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non
+            risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing
+            nec, ultricies sed, dolor.
+            <br /><br />
+            Cras elementum ultrices diam. Maecenas ligula massa, varius a,
+            semper congue, euismod non, mi. Proin porttitor, orci nec nonummy
+            molestie, enim est eleifend mi, non fermentum diam nisl sit amet
+            erat.
+          </p>
+        </section>
+        <section class="about-cards">
+            <div class="about-card highlight animate-on-scroll fade-up">
+              <h3>Explore Our Work</h3>
+              <a href="index.html" class="card-button">></a>
+            </div>
+          
+            <div class="about-card dark animate-on-scroll fade-up">
+              <h3>Connect With Us</h3>
+              <a href="contact.html" class="card-button">></a>
+            </div>
+          </section>
+      </div>
+      <section class="stay-up animate-on-scroll fade-right">
+        <div class="stay-up-content">
+          <h2>Stay Up To Date</h2>
+          <p>Subscribe to receive the latest updates, insights, and stories from GME Alliance.</p>
+          <form class="stay-up-form">
+            <input type="email" placeholder="Your email address" required />
+            <button type="submit">Subscribe</button>
+          </form>
+        </div>
+      </section>
+      <footer class="footer">
+        <div class="footer-links animate-on-scroll fade-left">
+          <a href="#">Terms & Conditions</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Contact</a>
+        </div>
+      
+        <div class="footer-socials animate-on-scroll fade-up">
+            <a href="#" aria-label="Instagram">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#" aria-label="Facebook">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="#" aria-label="LinkedIn">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+          </div>              
+      
+        <div class="footer-copy animate-on-scroll fade-up">
+          &copy; 2025 GME Alliance. All rights reserved.
+        </div>
+      </footer>
+
+    </main>
+  </body>
+
+  <script>
+    const toggleBtn = document.querySelector(".menu-toggle");
+    const closeBtn = document.querySelector(".close-menu");
+    const mobileMenu = document.querySelector(".mobile-menu");
+
+    toggleBtn.addEventListener("click", () => {
+      mobileMenu.classList.toggle("open");
+    });
+
+    closeBtn.addEventListener("click", () => {
+      mobileMenu.classList.remove("open");
+    });
+  </script>
+<script>
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target); // solo una vez
+        }
+      });
+    }, {
+      threshold: 0.1
+    });
+  
+    document.querySelectorAll('.animate-on-scroll').forEach(el => observer.observe(el));
+  </script>
+  
+
+</html>

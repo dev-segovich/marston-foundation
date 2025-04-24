@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GME Alliance</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+    <header class="navbar">
+        <img src="images/Logo GME alliance.png" alt="GME Alliance Logo" class="logo" />
+        
+        <nav class="nav-links">
+            <a href="index.html" class="nav-link">Our Work</a>
+            <a href="aboutus.html" class="nav-link">About Us</a>
+            <a href="content.html" class="nav-link active">Content</a>
+        </nav>
+        
+        <!-- Botón hamburguesa -->
+        <button class="menu-toggle" aria-label="Toggle menu">
+            ☰
+        </button>
+        
+        <!-- Menú móvil fullscreen -->
+        <div class="mobile-menu">
+            <button class="close-menu" aria-label="Close menu">✕</button>
+          
+            <a href="index.html" class="nav-link">Our Work</a>
+            <a href="aboutus.html" class="nav-link">About Us</a>
+            <a href="content.html" class="nav-link active">Content</a>
+        </div>
+          
+    </header>
+      
+    <main>
+        <section id="content" class="section">
+        <h1>content</h1>
+        </section>
+    </main>
+</body>
+
+<script>
+    const toggleBtn = document.querySelector(".menu-toggle");
+    const closeBtn = document.querySelector(".close-menu");
+    const mobileMenu = document.querySelector(".mobile-menu");
+  
+    toggleBtn.addEventListener("click", () => {
+      mobileMenu.classList.toggle("open");
+    });
+  
+    closeBtn.addEventListener("click", () => {
+      mobileMenu.classList.remove("open");
+    });
+</script>
+  
+  
+</html>
