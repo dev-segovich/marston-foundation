@@ -22,8 +22,6 @@ body {
   display: flex;
   justify-content: center; /* centramos el contenido por default */
   align-items: center;
-  padding: 2rem;
-  background-color: white;
   z-index: 100;
 }
 
@@ -38,7 +36,7 @@ body {
 }
 
 .nav-links {
-  display: flex;
+  display: none !important;
   gap: 1.5rem;
   justify-content: center;
   align-items: center;
@@ -101,10 +99,13 @@ body {
   position: absolute;
   right: 2rem;
   top: 2rem;
-  display: none;
   background: none;
-  border: none;
-  font-size: 1.5rem;
+  color: white;
+  gap: 2rem;
+  border: 2px solid white;
+  padding: 0.5rem 1rem; /* 👈 Esto da espacio interior */
+  border-radius: 8px; /* opcional para redondear bordes */
+  font-size: 2rem;
   cursor: pointer;
 }
 
@@ -152,18 +153,18 @@ body {
   border: 2px solid var(--highlight-color);
 }
 
+.mobile-menu.open {
+  display: flex;
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: all;
+}
+
 
 /* Responsive styles */
 @media (max-width: 768px) {
   .nav-links {
     display: none;
-  }
-
-  .mobile-menu.open {
-    display: flex;
-    opacity: 1;
-    transform: translateY(0);
-    pointer-events: all;
   }
 
   .navbar {
@@ -174,20 +175,24 @@ body {
     height: auto;
   }
 
+  .menu-toggle{
+    color: var(--text-color);
+    font-size: 1.5rem;
+    top: 1.25rem;
+    padding: 0;
+  }
+
   .logo {
     height: 32px;
     position: static;
   }
 
-  .menu-toggle {
-    display: block;
-    position: static;
-  }
+
 }
 
 .work-columns {
   display: flex;
-  height: 90vh;
+  height: 100vh;
   position: relative;
   overflow: hidden;
   background-size: cover;
