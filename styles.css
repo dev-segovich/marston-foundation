@@ -213,6 +213,12 @@ body {
   transition: background-color 0.3s ease;
   position: relative;
   cursor: pointer;
+  overflow: hidden;
+}
+
+/* Contenedor del título */
+.column-content {
+  z-index: 2;
 }
 
 .column:not(:last-child)::after {
@@ -260,6 +266,11 @@ body {
   transform: translateY(10px);
   transition: all 0.3s ease;
   pointer-events: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) translateY(20px);
+  text-align: center;
 }
 
 .submenu li {
@@ -275,8 +286,14 @@ body {
 /* Show submenu on hover */
 .column:hover .submenu {
   opacity: 1;
-  transform: translateY(0);
+  transform: translate(-50%, -50%) translateY(50px);
   pointer-events: auto;
+}
+
+.column:hover .column-content {
+  opacity: 1;
+  transform: translateY(-50px);
+  transition: all 0.3s ease;
 }
 
 /* Responsive: stack columns on mobile */
