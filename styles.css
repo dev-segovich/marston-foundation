@@ -506,15 +506,15 @@ body {
   }
 
   .mobile-block[data-id="multifamily"] {
-    background-image: url("images/fondo5.webp");
+    background-image: url("images/fondo5.jpg");
   }
 
   .mobile-block[data-id="ecology"] {
-    background-image: url("images/fondo6.webp");
+    background-image: url("images/fondo6.jpg");
   }
 
   .mobile-block[data-id="residential"] {
-    background-image: url("images/fondo7.webp");
+    background-image: url("images/fondo7.jpg");
   }
 }
 
