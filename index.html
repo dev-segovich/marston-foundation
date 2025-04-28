@@ -110,7 +110,7 @@
       </section>
 
       <!-- Vision Section -->
-      <section class="vision-section">
+      <section class="vision-section animate zoom-in">
         <h2>Investing in Growth. Building with Purpose.</h2>
         <p>
           At GME Alliance, we invest in the sectors shaping the future: real
@@ -176,49 +176,7 @@
     </main>
   </body>
 
-  <script>
-    const toggleBtn = document.querySelector(".menu-toggle");
-    const closeBtn = document.querySelector(".close-menu");
-    const mobileMenu = document.querySelector(".mobile-menu");
+  <script src="scripts.js"></script>
 
-    toggleBtn.addEventListener("click", () => {
-      mobileMenu.classList.toggle("open");
-    });
 
-    closeBtn.addEventListener("click", () => {
-      mobileMenu.classList.remove("open");
-    });
-  </script>
-
-  <script>
-    const workSection = document.querySelector(".work-columns");
-    const columns = document.querySelectorAll(".column");
-
-    // Establecer fondo inicial con la primera columna
-    const initialBg = columns[0].getAttribute("data-bg");
-    workSection.style.backgroundImage = `url(${initialBg})`;
-
-    // Cambiar al pasar el mouse
-    columns.forEach((col) => {
-      col.addEventListener("mouseenter", () => {
-        const bg = col.getAttribute("data-bg");
-        workSection.style.backgroundImage = `url(${bg})`;
-      });
-    });
-  </script>
-  <script>
-    const mobileBlocks = document.querySelectorAll(".mobile-block");
-
-    mobileBlocks.forEach((block) => {
-      block.addEventListener("click", () => {
-        // Cierra otros
-        mobileBlocks.forEach((b) => {
-          if (b !== block) b.classList.remove("active");
-        });
-
-        // Toggle el que clickeaste
-        block.classList.toggle("active");
-      });
-    });
-  </script>
 </html>

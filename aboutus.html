@@ -107,33 +107,8 @@
     </main>
   </body>
 
-  <script>
-    const toggleBtn = document.querySelector(".menu-toggle");
-    const closeBtn = document.querySelector(".close-menu");
-    const mobileMenu = document.querySelector(".mobile-menu");
+  <script src="scripts.js"></script>
 
-    toggleBtn.addEventListener("click", () => {
-      mobileMenu.classList.toggle("open");
-    });
-
-    closeBtn.addEventListener("click", () => {
-      mobileMenu.classList.remove("open");
-    });
-  </script>
-<script>
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('visible');
-          observer.unobserve(entry.target); // solo una vez
-        }
-      });
-    }, {
-      threshold: 0.1
-    });
-  
-    document.querySelectorAll('.animate-on-scroll').forEach(el => observer.observe(el));
-  </script>
   
 
 </html>
