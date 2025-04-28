@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GME Alliance</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+
+</head>
+<body>
+    <header class="navbar">
+        <img src="images/Logo GME alliance.png" alt="GME Alliance Logo" class="logo" />
+        
+        <!-- <nav class="nav-links">
+            <a href="index.html" class="nav-link active">Home</a>
+            <a href="aboutus.html" class="nav-link">About Us</a>
+            <a href="content.html" class="nav-link">Contact us</a>
+        </nav> -->
+        
+        <!-- Botón hamburguesa -->
+        <button class="menu-toggle" aria-label="Toggle menu">
+            ☰
+        </button>
+        
+        <!-- Menú móvil fullscreen -->
+        <div class="mobile-menu">
+            <button class="close-menu" aria-label="Close menu">✕</button>
+          
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="aboutus.html" class="nav-link">About Us</a>
+            <a href="content.html" class="nav-link">Contact us</a>
+        </div>
+          
+    </header>
+      
+    <main>
+        <!-- Hero Image -->
+        <section class="hero-section" style="background-image: url('images/fondo4.png');">
+        </section>
+
+        <section class="guide-section">
+            <h4 class="guide-tittle">GME Alliance / Real Estate</h4>
+        </section>
+
+        <!-- Vision Section -->
+        <section class="vision-section">
+            <h2>GME Alliance — Investing Where America Grows</h2>
+            <p>
+                GME Alliance invests in the backbone of America’s communities: housing designed for the workers and families that power the nation’s economy. Our focus is on delivering market-rate and workforce housing through garden-style apartments and townhomes—products that meet real, localized demand in cities where job growth is happening, but housing supply remains constrained. 
+                <br><br>
+                We believe that the best developments go beyond buildings. GME backs projects that embrace human-scale design, walkable neighborhoods, and integrated community spaces where retail and gathering places create connection, convenience, and value. Our strategy combines careful market analysis with a commitment to projects that enhance both quality of life and investment performance. 
+                <br><br>
+                By aligning capital with demographic shifts and employment trends, GME Alliance plays a critical role in solving one of the biggest challenges of our time: providing well-located, livable housing where it’s needed most. 
+            </p>
+        </section>
+
+        <!-- Our Approach Section -->
+        <section class="approach-section">
+            <h2>Our Approach — Grounded in Demand, Built for Resilience </h2>
+            <p>
+                At GME Alliance, we invest where the fundamentals are strongest and the need is clear. Our approach targets workforce and market-rate housing in secondary cities—places where population growth, job creation, and housing shortages converge. 
+                <br><br>
+                We focus on products that deliver financial feasibility and human livability. Garden-style apartments and townhomes allow us to build cost-effectively while fostering neighborhoods that feel connected and walkable. These environments not only meet the practical needs of today’s renters and buyers—they also promote health, engagement, and long-term retention. 
+                <br><br>
+                What sets our strategy apart is disciplined alignment with job hubs and commute zones, typically within 20 to 30 minutes of major employment centers. Whether driven by manufacturing, logistics, reshoring, or new technology investments, these jobs bring people—and we make sure there’s a place for them to call home. Our thesis is simple: when you invest where the jobs are, and build for the people who keep the economy moving, stability follows.     
+            </p>
+        </section>
+
+        <!-- Articles Grid -->
+        <section class="articles-grid">
+            <div class="article-card">
+                <img src="images/article5.png" alt="Small Modular Reactors" class="article-image" />
+                <div class="article-content">
+                  <h3>America’s Housing Shortage: Why Workforce Housing Remains the Most Resilient Bet </h3>
+                  <p>“America’s housing crisis is hitting working families the hardest. Workforce housing remains the most stable and resilient investment in today’s market.”  </p>
+                  <a href="realestate-article1.html" class="learn-more-button">Learn More →</a>
+                </div>
+              </div>
+              <div class="article-card">
+                <img src="images/article4.png" alt="AI and EVs" class="article-image" />
+                <div class="article-content">
+                  <h3>Secondary Cities, Primary Opportunity: The Case for Garden-Style Apartments and Townhomes </h3>
+                  <p>“The strongest real estate opportunities are in secondary cities where growth and demand align. Garden-style apartments and townhomes lead as the most feasible solution.” 
+                  </p>
+                  <a href="#" class="learn-more-button">Learn More →</a>
+                </div>
+              </div>
+              <div class="article-card">
+                <img src="images/article6.png" alt="Nuclear Race" class="article-image" />
+                <div class="article-content">
+                  <h3>Jobs, Commutes, and Community: How Employment Growth Shapes Local Housing Demand </h3>
+                  <p>
+                    “Job growth is reshaping housing demand. Building near employment hubs within key commute zones offers unmatched stability and absorption.” 
+                  </p>
+                  <a href="#" class="learn-more-button">Learn More →</a>
+                </div>
+              </div>                            
+        </section>
+          
+        <section class="stay-up">
+            <div class="stay-up-content">
+              <h2>Stay Up To Date</h2>
+              <p>Subscribe to receive the latest updates, insights, and stories from GME Alliance.</p>
+              <form class="stay-up-form">
+                <input type="email" placeholder="Your email address" required />
+                <button type="submit">Subscribe</button>
+              </form>
+            </div>
+          </section>
+          <footer class="footer">
+            <div class="footer-links">
+              <a href="#">Terms & Conditions</a>
+              <a href="#">Privacy Policy</a>
+              <a href="#">Contact</a>
+            </div>
+          
+            <div class="footer-socials">
+                <a href="#" aria-label="Instagram">
+                  <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#" aria-label="Facebook">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#" aria-label="LinkedIn">
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+              </div>              
+          
+            <div class="footer-copy">
+              &copy; 2025 GME Alliance. All rights reserved.
+            </div>
+          </footer>          
+      </main>      
+</body>
+
+<script>
+    const toggleBtn = document.querySelector(".menu-toggle");
+    const closeBtn = document.querySelector(".close-menu");
+    const mobileMenu = document.querySelector(".mobile-menu");
+  
+    toggleBtn.addEventListener("click", () => {
+      mobileMenu.classList.toggle("open");
+    });
+  
+    closeBtn.addEventListener("click", () => {
+      mobileMenu.classList.remove("open");
+    });
+</script>
+
+
+
+
+  
+  
+  
+  
+</html>

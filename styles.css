@@ -311,7 +311,7 @@ body {
 /* Sección Stay Up To Date */
 .stay-up {
   background-color: white;
-  padding: 6rem 2rem;
+  padding: 4rem 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -717,6 +717,11 @@ body {
   margin: 0 auto;
 }
 
+.vision-section p,
+.approach-section p {
+  text-align: justify;
+}
+
 .approach-section {
   background-color: #ffb0aa;;
   border-radius: 12px;
@@ -812,3 +817,38 @@ body {
 }
 
 
+.hero-article {
+  height: 50vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.article-content {
+  max-width: 900px;
+  margin: 4rem auto;
+  padding: 0 2rem;
+}
+
+.article-content h1 {
+  font-size: 2.8rem;
+  margin-bottom: 2rem;
+  color: var(--text-color);
+  text-align: left;
+}
+
+.article-content h2 {
+  font-size: 2rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  color: var(--highlight-color);
+  text-align: left;
+}
+
+.article-content p {
+  font-size: 1.1rem;
+  line-height: 2;
+  color: #444;
+  text-align: justify;
+  margin-bottom: 2rem;
+}
