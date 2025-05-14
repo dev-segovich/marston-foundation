@@ -580,8 +580,12 @@ main {
     background-image: url("images/fondo6.png");
   }
 
-  .mobile-block[data-id="residential"] {
+  .mobile-block[data-id="energy"] {
     background-image: url("images/fondo7.png");
+  }
+
+  .mobile-block[data-id="telecom"] {
+    background-image: url("images/telecom.png");
   }
 }
 
@@ -792,6 +796,7 @@ main {
   padding: 4rem 2rem;
   max-width: 1200px;
   margin: 0 auto;
+  align-items: stretch;
 }
 
 .article-card {
@@ -803,7 +808,7 @@ main {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   display: flex;
   flex-direction: column;
-  height: 100%;
+  height: auto;
 }
 
 .article-image {
@@ -812,7 +817,7 @@ main {
   object-fit: cover;
 }
 
-.article-content {
+.card-content {
   padding: 2rem;
   flex-grow: 1;
   display: flex;
@@ -820,16 +825,19 @@ main {
   justify-content: space-between;
 }
 
-.article-content h3 {
+.card-content h3 {
   font-size: 1.4rem;
   margin-bottom: 1rem;
   color: #111;
 }
 
-.article-content p {
-  font-size: 1rem;
+.card-content p {
+  text-align: justify;
+  font-size: 1.1rem;
+  line-height: 2;
   color: #666;
   margin-bottom: 2rem;
+  flex-grow: 1;
 }
 
 /* Learn More button */
@@ -844,6 +852,7 @@ main {
   cursor: pointer;
   padding: 0;
   transition: color 0.3s ease;
+  flex-grow: 1;
 }
 
 .learn-more-button:hover {
