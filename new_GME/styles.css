@@ -199,8 +199,15 @@ main {
   .menu-toggle{
     color: var(--text-color);
     font-size: 1.5rem;
-    top: 1.25rem;
-    padding: 0;
+    top: 0.8rem;
+    right: 1.25rem;
+    padding: 0.5rem 0.5rem;
+  }
+
+  .menu-toggle.light {
+    color: black;
+    border-color: black;
+
   }
 
   .logo {
