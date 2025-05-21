@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GME Alliance | Coming Soon</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="overlay"></div>
+  <div class="container drop-in">
+    <div class="content">
+      <img src="images/Logo GME alliance.png" alt="GME Alliance Logo" class="logo" />
+      <p class="subtitle">
+        <span id="countdown"></span>
+      </p>      
+      <h2 class="coming-soon">Coming Soon</h2>
+      <p class="description">
+        We're working hard to launch our new site. Stay tuned for something amazing.
+      </p>
+      <form class="email-form">
+        <input type="email" placeholder="Enter your email" required />
+        <button type="submit">Notify Me</button>
+      </form>
+    </div>
+  </div>
+</body>
+<script>
+    // Set the date you're counting down to
+    const launchDate = new Date("2025-05-17T00:00:00"); // 📅 CAMBIA la fecha aquí si lo deseas
+  
+    const countdown = document.getElementById("countdown");
+  
+    function updateCountdown() {
+      const now = new Date();
+      const diff = launchDate - now;
+  
+      if (diff <= 0) {
+        countdown.innerHTML = "Launching Today!";
+        return;
+      }
+  
+      const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
+      const minutes = Math.floor((diff / (1000 * 60)) % 60);
+      const seconds = Math.floor((diff / 1000) % 60);
+  
+      countdown.innerHTML = `
+        <span>${days}d</span> :
+        <span>${String(hours).padStart(2, "0")}h</span> :
+        <span>${String(minutes).padStart(2, "0")}m</span> :
+        <span>${String(seconds).padStart(2, "0")}s</span>
+      `;
+    }
+  
+    updateCountdown();
+    setInterval(updateCountdown, 1000);
+  </script>
+  
+
+</html>

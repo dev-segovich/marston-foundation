@@ -1,61 +1,229 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>GME Alliance | Coming Soon</title>
-  <link rel="stylesheet" href="styles.css" />
-</head>
-<body>
-  <div class="overlay"></div>
-  <div class="container drop-in">
-    <div class="content">
-      <img src="images/Logo GME alliance.png" alt="GME Alliance Logo" class="logo" />
-      <p class="subtitle">
-        <span id="countdown"></span>
-      </p>      
-      <h2 class="coming-soon">Coming Soon</h2>
-      <p class="description">
-        We're working hard to launch our new site. Stay tuned for something amazing.
-      </p>
-      <form class="email-form">
-        <input type="email" placeholder="Enter your email" required />
-        <button type="submit">Notify Me</button>
-      </form>
-    </div>
-  </div>
-</body>
-<script>
-    // Set the date you're counting down to
-    const launchDate = new Date("2025-05-17T00:00:00"); // 📅 CAMBIA la fecha aquí si lo deseas
-  
-    const countdown = document.getElementById("countdown");
-  
-    function updateCountdown() {
-      const now = new Date();
-      const diff = launchDate - now;
-  
-      if (diff <= 0) {
-        countdown.innerHTML = "Launching Today!";
-        return;
-      }
-  
-      const days = Math.floor(diff / (1000 * 60 * 60 * 24));
-      const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
-      const minutes = Math.floor((diff / (1000 * 60)) % 60);
-      const seconds = Math.floor((diff / 1000) % 60);
-  
-      countdown.innerHTML = `
-        <span>${days}d</span> :
-        <span>${String(hours).padStart(2, "0")}h</span> :
-        <span>${String(minutes).padStart(2, "0")}m</span> :
-        <span>${String(seconds).padStart(2, "0")}s</span>
-      `;
-    }
-  
-    updateCountdown();
-    setInterval(updateCountdown, 1000);
-  </script>
-  
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GME Alliance</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header class="navbar">
+      <img
+        src="images/Logo GME alliance.png"
+        alt="GME Alliance Logo"
+        class="logo"
+      />
+
+      <!-- <nav class="nav-links">
+            <a href="index.html" class="nav-link active">Home</a>
+            <a href="aboutus.html" class="nav-link">About Us</a>
+            <a href="content.html" class="nav-link">Contact us</a>
+        </nav> -->
+
+      <!-- Botón hamburguesa -->
+      <button class="menu-toggle light" aria-label="Toggle menu">☰</button>
+
+      <!-- Menú móvil fullscreen -->
+      <div class="mobile-menu">
+        <button class="close-menu" aria-label="Close menu">✕</button>
+
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="aboutus.html" class="nav-link">About Us</a>
+        <a href="content.html" class="nav-link">Contact us</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="work-columns">
+        <div class="column" data-bg="images/fondo4.png">
+          <div class="column-content">
+            <h2>Real Estate</h2>
+          </div>
+          <ul class="submenu">
+            <li><a href="realestate.html">Mixed-Use</a></li>
+            <li><a href="realestate.html">Multifamily</a></li>
+            <li><a href="realestate.html">Retail</a></li>
+            <li><a href="realestate.html">RV parks</a></li>
+          </ul>
+        </div>
+        <div class="column" data-bg="images/fondo5.png">
+          <div class="column-content">
+            <h2>Safety</h2>
+          </div>
+          <ul class="submenu">
+            <li><a href="safety.html">Find out more</a></li>
+          </ul>
+        </div>
+        <div class="column" data-bg="images/fondo6.png">
+          <div class="column-content">
+            <h2>Mobility</h2>
+          </div>
+          <ul class="submenu">
+            <li><a href="mobility.html">RV parts</a></li>
+            <li><a href="mobility.html">RV Trailer Components</a></li>
+          </ul>
+        </div>
+        <div class="column" data-bg="images/fondo7.png">
+          <div class="column-content">
+            <h2>Energy</h2>
+          </div>
+          <ul class="submenu">
+            <li><a href="energy.html">Find out more</a></li>
+          </ul>
+        </div>
+        <div class="column" data-bg="images/telecom.png">
+          <div class="column-content">
+            <h2>Telecom</h2>
+          </div>
+          <ul class="submenu">
+            <li><a href="telecom.html">Find out more</a></li>
+          </ul>
+        </div>
+      </section>
+      <section class="work-columns-mobile">
+        <div class="mobile-block" data-id="commercial">
+          <h2>Real Estate</h2>
+          <ul class="submenu-mobile">
+            <li><a href="realestate.html">Mixed-Use</a></li>
+            <li><a href="realestate.html">Multifamily</a></li>
+            <li><a href="realestate.html">Retail</a></li>
+            <li><a href="realestate.html">RV parks</a></li>
+          </ul>
+        </div>
+        <div class="mobile-block" data-id="multifamily">
+          <h2>Safety</h2>
+          <ul class="submenu-mobile">
+            <li><a href="safety.html">Find out more</a></li>
+          </ul>
+        </div>
+        <div class="mobile-block" data-id="ecology">
+          <h2>Mobility</h2>
+          <ul class="submenu-mobile">
+            <li><a href="mobility.html">RV parts</a></li>
+            <li><a href="mobility.html">RV Trailer Components</a></li>
+          </ul>
+        </div>
+        <div class="mobile-block" data-id="energy">
+          <h2>Energy</h2>
+          <ul class="submenu-mobile">
+            <li><a href="energy.html">Find out more</a></li>
+          </ul>
+        </div>
+        <div class="mobile-block" data-id="telecom">
+          <h2>Telecom</h2>
+          <ul class="submenu-mobile">
+            <li><a href="telecom.html">Find out more</a></li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Vision Section -->
+      <section class="vision-section animate zoom-in">
+        <h2>Investing in Growth. Building with Purpose.</h2>
+        <p>
+          At GME Alliance, we invest in the sectors shaping the future: real
+          estate development, construction safety & technology, RV parts,
+          equipment manufacturing & logistics, and clean energy—including
+          next-generation nuclear solutions. 
+          <br><br>
+          But we’re not just capital
+          providers. We’re partners in progress—backing companies where
+          innovation meets impact, and where smart execution creates lasting
+          value. 
+          <br><br>
+          Our strategy is rooted in data-driven analysis, operational
+          efficiency, and a clear mission: to fund what works, scale what
+          matters, and leave a positive mark on the world.
+          <br><br>
+          From safer job sites
+          to more affordable homes, from the freedom of the open road to the
+          promise of clean, reliable energy—we believe great investments don’t
+          just generate returns. They make life better. 
+          <br><br>
+
+          <b>GME Alliance — Investing with purpose. Scaling with precision.</b>
+        </p>
+        
+      </section>
+      
+      <!-- Articles Grid -->
+      <section class="articles-grid">
+          <div class="article-card animate zoom-in">
+            <img src="images/article5.png" alt="Small Modular Reactors" class="article-image" />
+            <div class="article-content">
+              <h3>America’s Housing Shortage: Why Workforce Housing Remains the Most Resilient Bet </h3>
+              <p>America’s housing crisis is hitting working families the hardest. Workforce housing remains the most stable and resilient investment in today’s market.  </p>
+              <a href="realestate-article1.html" class="learn-more-button">Learn More →</a>
+            </div>
+          </div>
+          <div class="article-card animate zoom-in delay-1">
+            <img src="images/article2.png" alt="AI and EVs" class="article-image" />
+            <div class="article-content">
+              <h3>AI and EVs Are Supercharging Power Demand—Next-Gen Nuclear Stands Ready to Deliver</h3>
+              <p>AI and EVs are fueling unprecedented growth in electricity demand. Next-gen nuclear stands ready to deliver the 24/7 clean power these technologies require. </p>
+              <a href="energy-article2.html" class="learn-more-button">Learn More →</a>
+            </div>
+          </div>
+          <div class="article-card animate zoom-in">
+            <img src="images/article10.png" alt="Small Modular Reactors" class="article-image" />
+            <div class="article-content">
+              <h3>The RV Industry — Driving Growth, Innovation, and Family Joy </h3>
+              <p>The RV industry is booming, driven by a deep desire for freedom, connection, and sustainable adventure — a market where innovation meets the open road.</p>
+              <a href="mobility-article1.html" class="learn-more-button">Learn More →</a>
+            </div>
+          </div>                           
+    </section>
+
+      <section class="stay-up">
+        <div class="stay-up-content">
+          <h2>Stay Up To Date</h2>
+          <p>
+            Subscribe to receive the latest updates, insights, and stories from
+            GME Alliance.
+          </p>
+          <form class="stay-up-form">
+            <input type="email" placeholder="Your email address" required />
+            <button type="submit">Subscribe</button>
+          </form>
+        </div>
+      </section>
+      <footer class="footer">
+        <div class="footer-content">
+          <div class="footer-contact">
+            <h4>Contact Us</h4>
+            <p>GME Alliance LLC</p>
+            <p>924 NW 1st St</p>
+            <p>Fort Lauderdale, FL 33311, USA</p>
+            <p>Email: <a href="mailto:Info@gmealliance.com">info@gmealliance.com</a></p>
+          </div>
+      
+          <div class="footer-socials">
+            <h4>Follow Us</h4>
+            <div class="social-icons">
+              <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+              <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+        </div>
+      
+        <div class="footer-copy">
+          <p style="font-size: medium; color: white;">
+            &copy; 2025 GME Alliance LLC. All rights reserved.
+          </p>
+          <p class="disclaimer opacity-80 text-sm italic" style="font-size: small;">
+            Images used on this site are either owned by GME Alliance or used with proper licensing from the creator. For more information, please review our <a href="disclaimer.html" style="color: white;">[Full Disclaimer]</a>. 
+          </p>
+        </div>
+      </footer>
+    </main>
+  </body>
+
+  <script src="scripts.js"></script>
+
 
 </html>
