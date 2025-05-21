@@ -431,6 +431,7 @@ main {
 
 .footer-contact, .footer-socials {
   flex: 1 1 300px;
+  text-align: center;
 }
 
 .footer-contact h4, .footer-socials h4 {
