@@ -1,7 +1,7 @@
 :root {
   --text-color: #111;
   --background-color: #fff;
-  --highlight-color: #d52b1e;
+  --highlight-color: #a0bdd6;
   --font-main: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
@@ -381,7 +381,7 @@ main {
 }
 
 .stay-up-form button:hover {
-  background-color: #a01212;
+  background-color: #364350;
   transform: scale(1.05);
 }
 
@@ -566,7 +566,7 @@ main {
   }
 
   .mobile-block[data-id="commercial"] {
-    background-image: url("images/fondo4.png");
+    background-image: url("images/mfondo4.png");
   }
 
   .mobile-block[data-id="multifamily"] {
@@ -774,7 +774,7 @@ main {
 }
 
 .approach-section {
-  background-color: #ffb0aa;;
+  background-color: #aaf5ff;;
   border-radius: 12px;
   padding: 4rem 2rem;
 }
@@ -842,7 +842,7 @@ main {
   align-self: flex-start;
   text-decoration: none;
   background: transparent;
-  color: #d52b1e;
+  color: #364350;
   font-weight: bold;
   font-size: 1rem;
   border: none;
@@ -853,7 +853,7 @@ main {
 }
 
 .learn-more-button:hover {
-  color: #a11212;
+  color: #364350;
 }
 
 .article-card:hover {
@@ -1082,7 +1082,7 @@ main {
 }
 
 .contact-form button:hover {
-  background-color: #a01212;
+  background-color: #364350;
 }
 
 .contact-info {

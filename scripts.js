@@ -1,15 +1,15 @@
 // Este archivo contiene el código JavaScript para la funcionalidad de la página web
-const toggleBtn = document.querySelector(".menu-toggle");
-const closeBtn = document.querySelector(".close-menu");
-const mobileMenu = document.querySelector(".mobile-menu");
+// const toggleBtn = document.querySelector(".menu-toggle");
+// const closeBtn = document.querySelector(".close-menu");
+// const mobileMenu = document.querySelector(".mobile-menu");
 
-toggleBtn.addEventListener("click", () => {
-  mobileMenu.classList.toggle("open");
-});
+// toggleBtn.addEventListener("click", () => {
+//   mobileMenu.classList.toggle("open");
+// });
 
-closeBtn.addEventListener("click", () => {
-  mobileMenu.classList.remove("open");
-});
+// closeBtn.addEventListener("click", () => {
+//   mobileMenu.classList.remove("open");
+// });
 
 const workSection = document.querySelector(".work-columns");
 const columns = document.querySelectorAll(".column");

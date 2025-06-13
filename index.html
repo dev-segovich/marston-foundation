@@ -3,9 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>GME Alliance</title>
+    <title>MARSTON FOUNDATION</title>
     <link rel="stylesheet" href="styles.css" />
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="images/icon2.webp" type="image/x-icon" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
@@ -13,11 +13,11 @@
   </head>
   <body>
     <header class="navbar">
-      <img
-        src="images/Logo GME alliance.png"
-        alt="GME Alliance Logo"
-        class="logo"
-      />
+      <picture>
+        <source srcset="images/Logo2.webp" media="(max-width: 768px)" />
+        <img src="images/Logo.webp" alt="GME Alliance Logo" class="logo" />
+      </picture>
+      
 
       <!-- <nav class="nav-links">
             <a href="index.html" class="nav-link active">Home</a>
@@ -26,29 +26,26 @@
         </nav> -->
 
       <!-- Botón hamburguesa -->
-      <button class="menu-toggle light" aria-label="Toggle menu">☰</button>
+      <!-- <button class="menu-toggle light" aria-label="Toggle menu">☰</button> -->
 
       <!-- Menú móvil fullscreen -->
-      <div class="mobile-menu">
+      <!-- <div class="mobile-menu">
         <button class="close-menu" aria-label="Close menu">✕</button>
 
         <a href="index.html" class="nav-link">Home</a>
         <a href="aboutus.html" class="nav-link">About Us</a>
         <a href="content.html" class="nav-link">Contact us</a>
-      </div>
+      </div> -->
     </header>
 
     <main>
       <section class="work-columns">
-        <div class="column" data-bg="images/fondo4.png">
+        <div class="column" data-bg="images/mfondo4.png">
           <div class="column-content">
             <div class="column-inner">
-              <h2>Real Estate</h2>
+              <h2>Faith Based Development</h2>
               <ul class="submenu">
-                <li><a href="realestate.html">Mixed-Use</a></li>
-                <li><a href="realestate.html">Multifamily</a></li>
-                <li><a href="realestate.html">Retail</a></li>
-                <li><a href="realestate.html">RV parks</a></li>
+                <li><a href="faith-development.html">Explore now</a></li>
               </ul>
             </div>
           </div>
@@ -56,20 +53,9 @@
         <div class="column" data-bg="images/fondo5.png">
           <div class="column-content">
             <div class="column-inner">
-              <h2>Safety</h2>
+              <h2>Building Skilled Futures</h2>
               <ul class="submenu">
-                <li><a href="safety.html">Find out more</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="column" data-bg="images/fondo6.png">
-          <div class="column-content">
-            <div class="column-inner">
-              <h2>Mobility</h2>
-              <ul class="submenu">
-                <li><a href="mobility.html">RV parts</a></li>
-                <li><a href="mobility.html">RV Trailer Components</a></li>
+                <li><a href="safety.html">Coming Soon</a></li>
               </ul>
             </div>
           </div>
@@ -77,19 +63,9 @@
         <div class="column" data-bg="images/fondo7.png">
           <div class="column-content">
             <div class="column-inner">
-              <h2>Energy</h2>
+              <h2>Powering Nuclear Talent</h2>
               <ul class="submenu">
-                <li><a href="energy.html">Find out more</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="column" data-bg="images/telecom.png">
-          <div class="column-content">
-            <div class="column-inner">
-              <h2>Telecom</h2>
-              <ul class="submenu">
-                <li><a href="telecom.html">Find out more</a></li>
+                <li><a href="energy.html">Coming Soon</a></li>
               </ul>
             </div>
           </div>
@@ -97,66 +73,37 @@
       </section>
       <section class="work-columns-mobile">
         <div class="mobile-block" data-id="commercial">
-          <h2>Real Estate</h2>
-          <ul class="submenu-mobile">
-            <li><a href="realestate.html">Mixed-Use</a></li>
-            <li><a href="realestate.html">Multifamily</a></li>
-            <li><a href="realestate.html">Retail</a></li>
-            <li><a href="realestate.html">RV parks</a></li>
-          </ul>
+          <h2>Faith Besed Development</h2>
+              <ul class="submenu-mobile">
+                <li><a href="realestate.html">Explore now</a></li>
+              </ul>
         </div>
         <div class="mobile-block" data-id="multifamily">
-          <h2>Safety</h2>
-          <ul class="submenu-mobile">
-            <li><a href="safety.html">Find out more</a></li>
-          </ul>
-        </div>
-        <div class="mobile-block" data-id="ecology">
-          <h2>Mobility</h2>
-          <ul class="submenu-mobile">
-            <li><a href="mobility.html">RV parts</a></li>
-            <li><a href="mobility.html">RV Trailer Components</a></li>
-          </ul>
+          <h2>Building Skilled Futures</h2>
+              <ul class="submenu-mobile">
+                <li><a href="safety.html">Coming Soon</a></li>
+              </ul>
         </div>
         <div class="mobile-block" data-id="energy">
-          <h2>Energy</h2>
+          <h2>Powering Nuclear Talent</h2>
           <ul class="submenu-mobile">
-            <li><a href="energy.html">Find out more</a></li>
+            <li><a href="energy.html">Coming Soon</a></li>
           </ul>
         </div>
-        <div class="mobile-block" data-id="telecom">
-          <h2>Telecom</h2>
-          <ul class="submenu-mobile">
-            <li><a href="telecom.html">Find out more</a></li>
-          </ul>
-        </div>
+        
       </section>
 
       <!-- Vision Section -->
       <section class="vision-section animate zoom-in">
-        <h2>Investing in Growth. Building with Purpose.</h2>
+        <h2>Empowering the Future of Skilled Trades and Communities</h2>
         <p>
-          At GME Alliance, we invest in the sectors shaping the future: real
-          estate development, construction safety & technology, RV parts,
-          equipment manufacturing & logistics, and clean energy—including
-          next-generation nuclear solutions. 
+          The Marston Foundation exists to close America’s most critical labor gaps and help communities unlock the full value of their assets—through two mission tracks: 
           <br><br>
-          But we’re not just capital
-          providers. We’re partners in progress—backing companies where
-          innovation meets impact, and where smart execution creates lasting
-          value. 
+          <b>1. Faith-Based Community Development</b><br>
+          We work alongside churches and religious institutions to help them activate underutilized land for mission-aligned projects. These include affordable housing, education centers, and services that meet local needs—while creating new revenue to replace declining donations and sustain their ministries long-term.
           <br><br>
-          Our strategy is rooted in data-driven analysis, operational
-          efficiency, and a clear mission: to fund what works, scale what
-          matters, and leave a positive mark on the world.
-          <br><br>
-          From safer job sites
-          to more affordable homes, from the freedom of the open road to the
-          promise of clean, reliable energy—we believe great investments don’t
-          just generate returns. They make life better. 
-          <br><br>
-
-          <b>GME Alliance — Investing with purpose. Scaling with precision.</b>
+          <b>2. Workforce Development in Skilled Trades (Coming Soon)</b><br>
+          We fund and coordinate training opportunities embedded in real-world construction and nuclear energy projects. Whether it’s a housing development in Florida or a power facility in Missouri, our programs connect aspiring tradespeople with hands-on experience, mentorship, and a sustainable career path. 
         </p>
         
       </section>
@@ -206,10 +153,10 @@
         <div class="footer-content">
           <div class="footer-contact">
             <h4>Contact Us</h4>
-            <p>GME Alliance LLC</p>
-            <p>924 NW 1st St</p>
-            <p>Fort Lauderdale, FL 33311, USA</p>
-            <p>Email: <a href="mailto:Info@gmealliance.com">info@gmealliance.com</a></p>
+            <p>MARSTON FOUNDATION</p>
+            <p>ADDRESS</p>
+            <p>ADDRESS 2, USA</p>
+            <p>Email: <a href="mailto:Info@mar-ston.org">info@mar-ston.org</a></p>
           </div>
       
           <!-- <div class="footer-socials">
@@ -224,10 +171,10 @@
       
         <div class="footer-copy">
           <p style="font-size: medium; color: white;">
-            &copy; 2025 GME Alliance LLC. All rights reserved.
+            &copy; 2025 Marston Foundation. All rights reserved.
           </p>
           <p class="disclaimer opacity-80 text-sm italic" style="font-size: small;">
-            Images used on this site are either owned by GME Alliance or used with proper licensing from the creator. For more information, please review our <a href="disclaimer.html" style="color: white;">[Full Disclaimer]</a>. 
+            Images used on this site are either owned by Marston foundation or used with proper licensing from the creator. For more information, please review our <a href="disclaimer.html" style="color: white;">[Full Disclaimer]</a>. 
           </p>
         </div>
       </footer>
