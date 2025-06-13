@@ -570,20 +570,13 @@ main {
   }
 
   .mobile-block[data-id="multifamily"] {
-    background-image: url("images/fondo5.png");
-  }
-
-  .mobile-block[data-id="ecology"] {
-    background-image: url("images/fondo6.png");
+    background-image: url("images/mfondo6.png");
   }
 
   .mobile-block[data-id="energy"] {
-    background-image: url("images/fondo7.png");
+    background-image: url("images/mfondo7.png");
   }
 
-  .mobile-block[data-id="telecom"] {
-    background-image: url("images/telecom.png");
-  }
 }
 
 .about-us-main {
